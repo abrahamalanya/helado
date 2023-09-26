@@ -1,9 +1,12 @@
 import './App.css'
+import helado from "./assets/helado-fresa.png"
 
 function App() {
   return (
     <>
-      <h1>Helado</h1>
+      <div className="imagePrimary">
+        <img src={helado} alt="Helado" />
+      </div>
     </>
   )
 }

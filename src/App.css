@@ -1,3 +1,26 @@
-h1 {
-  font-weight: 400;
+.imagePrimary {
+  width: 300px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imagePrimary > img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .imagePrimary {
+    width: 250px;
+  }
+}
+
+@media (max-height: 700px) {
+  .imagePrimary {
+    height: 400px;
+  }
 }
